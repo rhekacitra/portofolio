@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <nav>
+        <ul> 
+            <li> <a href="/">Home</a> </li>
+            <li> <a href="/projects/">Projects</a> </li>
+            <li> <a href="/contact/">Contact</a> </li> 
+            <li><a href="https://github.com/rhekacitra" target="_blank">Profile</a> </li>
+        </ul>
+    </nav>
+
+    <h1>Contact</h1>
+
+    <form action="mailto:foo@example.com" method="POST" enctype="text/plain">
+        <label>
+            Email:
+            <input name="email" type="email" required>
+        </label>
+
+        <label>
+            Subject:
+            <input name="subject" required>
+        </label>
+
+        <label>
+            Message:
+            <textarea name="body" rows="5" required></textarea>
+        </label>
+
+        <button>Send</button>
+    </form>
+</body>
+</html>
