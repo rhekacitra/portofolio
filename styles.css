@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 0.5em;
-  background-color: #fef7ef;
+  background-color: #EEF1EF;
 }
 
 .projects article:hover {
@@ -134,7 +134,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* RESUME PAGE */
 .cv section {
-  background-color: #fff;
+  background-color: #EEF1EF;
+
   padding: 2em;
   border: 1px solid #ddd;
   border-radius: 0.75em;
@@ -149,10 +150,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cv section h2 {
-  border-bottom: 3px solid var(--color-accent);
+  border-bottom: 3px solid #7D98A1;
   padding-bottom: 0.3em;
   margin-bottom: 1em;
-  color: var(--color-accent);
+  color: #7D98A1;
 }
 
 .cv article {
@@ -160,10 +161,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cv article img {
-  max-width: 200px;
+  max-width: 150px;
   display: block;
   margin: 1em 0;
 }
+
 
 .cv article h3 {
   margin-top: 0.5em;
