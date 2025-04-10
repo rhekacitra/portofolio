@@ -114,6 +114,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fef7ef;
 }
 
+.projects article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  background-color: #fafafa;
+}
+
 .projects h2 {
   margin: 0;
 }
@@ -124,4 +130,60 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   display: block;
   margin-block: 0.5em;
+}
+
+/* RESUME PAGE */
+.cv section {
+  background-color: #fff;
+  padding: 2em;
+  border: 1px solid #ddd;
+  border-radius: 0.75em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cv section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.cv section h2 {
+  border-bottom: 3px solid var(--color-accent);
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+  color: var(--color-accent);
+}
+
+.cv article {
+  margin-bottom: 1.5em;
+}
+
+.cv article img {
+  max-width: 200px;
+  display: block;
+  margin: 1em 0;
+}
+
+.cv article h3 {
+  margin-top: 0.5em;
+}
+
+.cv article p time {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Skills list inside card */
+.cv section:last-of-type ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15ch, 1fr));
+  gap: 0.5em 1.5em;
+  list-style: none;
+  padding-left: 0;
+}
+
+.cv section:last-of-type ul li::before {
+  content: "• ";
+  color: var(--color-accent);
 }
