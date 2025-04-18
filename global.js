@@ -22,12 +22,38 @@ let pages = [
     {url: 'https://github.com/rhekacitra', title: 'Github'}
 ]
 
-const BASE_PATH = location.hostname === "localhost" ? "/" : "/website/";
-// ? "/" // local server
-// : "/website/"; // Github Pages repo name
-
 let nav = document.createElement('nav');
 document.body.prepend(nav);
+
+// Detect local vs GitHub Pages and adjust base path
+const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+  ? "/" // local dev
+  : "/portofolio/"; // your actual GitHub Pages repo
+
+// Step 3.1 continued: Create links and add to nav
+for (let p of pages) {
+    let url = p.url;
+    if (!url.startsWith('http')) {
+      url = BASE_PATH + url;
+    }
+  
+    let a = document.createElement('a');
+    a.href = url;
+    a.textContent = p.title;
+  
+    // Step 2.3: Highlight current page
+    a.classList.toggle(
+      'current',
+      a.host === location.host && a.pathname === location.pathname
+    );
+  
+    // Open external links in new tab
+    if (a.host !== location.host) {
+      a.target = '_blank';
+    }
+  
+    nav.append(a);
+  }
 
 // for (let p of pages) {
 //     let url = p.url;
@@ -52,29 +78,29 @@ document.body.prepend(nav);
 
 // }
 
-for (let p of pages) {
-    let url = p.url;
-    if (!url.startsWith("http")) {
-      url = BASE_PATH + url;
-    }
+// for (let p of pages) {
+//     let url = p.url;
+//     if (!url.startsWith("http")) {
+//       url = BASE_PATH + url;
+//     }
   
-    let a = document.createElement("a");
-    a.href = url;
-    a.textContent = p.title;
+//     let a = document.createElement("a");
+//     a.href = url;
+//     a.textContent = p.title;
   
-    // Highlight current page
-    a.classList.toggle(
-      "current",
-      a.host === location.host && a.pathname === location.pathname
-    );
+//     // Highlight current page
+//     a.classList.toggle(
+//       "current",
+//       a.host === location.host && a.pathname === location.pathname
+//     );
   
-    // Open external links in new tab
-    if (a.host !== location.host) {
-      a.target = "_blank";
-    }
+//     // Open external links in new tab
+//     if (a.host !== location.host) {
+//       a.target = "_blank";
+//     }
   
-    nav.append(a);
-  }
+//     nav.append(a);
+//   }
   
 document.body.insertAdjacentHTML(
     'afterbegin',
