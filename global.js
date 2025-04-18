@@ -22,35 +22,35 @@ let pages = [
     {url: 'https://github.com/rhekacitra', title: 'Github'}
 ]
 
-const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-? "/" // local server
-: "/website/"; // Github Pages repo name
+const BASE_PATH = location.hostname === "localhost" ? "/" : "/portofolio/";
 
-let nav = document.createElement('nav');
-document.body.prepend(nav);
+// ? "/" // local server
+// : "/website/"; // Github Pages repo name
 
 for (let p of pages) {
     let url = p.url;
-    let title = p.title;
-    // nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
-
-    if (!url.startsWith('http')) {
-        url = BASE_PATH + url;
+    if (!url.startsWith("http")) {
+      url = BASE_PATH + url;
     }
-
-    let a = document.createElement('a');
+  
+    let a = document.createElement("a");
     a.href = url;
-    a.textContent = title;
-
-    a.classList.toggle('current', a.host === location.host && a.pathname === location.pathname);
-
+    a.textContent = p.title;
+  
+    // Highlight current page
+    a.classList.toggle(
+      "current",
+      a.host === location.host && a.pathname === location.pathname
+    );
+  
+    // Open external links in new tab
     if (a.host !== location.host) {
-        a.target = '_blank';
+      a.target = "_blank";
     }
-
+  
     nav.append(a);
-
-}
+  }
+  
 
 document.body.insertAdjacentHTML(
     'afterbegin',
