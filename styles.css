@@ -1,15 +1,28 @@
 html {
   --color-accent: #c35063; 
-  accent-color: var(--color-accent); /* for form elements etc */
+  accent-color: var(--color-accent);
 }
 
+/* :root {
+  color-scheme: light;
+} */
+
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  font-family: inherit;
+  padding: 0.3em 0.6em;
+  border-radius: 0.5em;
+}
+
+
 body {
-    /* Set line height to 1.5 times the font size
-         and use the OS’s UI font as the website font
-       */
-    font: 100%/1.5 system-ui;
+    font-family: "Gaegu", system-ui;
+    font: 100%/1.5 "Gaegu";
     max-width: 100ch;
-    /* margin: auto auto; */
+    background-color: rgb(248, 248, 248);
     margin-inline: max(1em, (100% - 100ch) / 2);
     padding: 30px;
   }
@@ -23,6 +36,7 @@ nav {
 }
 
 nav a {
+  font-size: 1.2rem;
   flex: 1;
   text-align: center;
   text-decoration: none;
@@ -30,7 +44,9 @@ nav a {
   padding: 0.5em;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #f8cbd2;
+  /* border-bottom-color: #f8cbd2; */
+  border-color: oklch(50% 10% 200 / 40%);
+
 }
 
 nav a.current {
@@ -40,34 +56,67 @@ nav a.current {
 
 nav a:hover {
   border-bottom: 0.4em solid var(--color-accent);
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  /* background-color: oklch(from var(--color-accent) 95% 5% h); */
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
+
 }
 
 /* CONTACT PAGE */
 
-input,
-textarea,
-button {
-  font: inherit;
-}
-
-form {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1em;
-}
-
-form label,
-form button {
-  grid-column: 1 / -1;
-}
-
-form label {
-  display: grid;
-  grid-template-columns: subgrid;
-  align-items: center; 
-  gap: 0.5em;
-}
+   form {
+    background-color: canvas;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1em;
+  }
+  
+  input,
+  textarea {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 0.75em;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px oklch(90% 10% 20% / 0.3);
+    outline: none;
+  }
+  
+  form label,
+  form button {
+    grid-column: 1 / -1;
+  }
+  
+  form label {
+    display: grid;
+    grid-template-columns: subgrid;
+    align-items: center;
+    gap: 0.5em;
+  }
+  
+  button {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: oklch(60% 20% 20);
+  }
 
 /* HOME PAGE */
 .headshot {
@@ -131,6 +180,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-block: 0.5em;
 }
 
+@media (prefers-color-scheme: dark) {
+  .projects article {
+    color: black;
+  }
+
+  .projects a {
+    color: #3e1e99; /* Optional: customize your link color too */
+  }
+}
+
 /* RESUME PAGE */
 .cv section {
   background-color: #EEF1EF;
@@ -188,3 +247,15 @@ h1, h2, h3, h4, h5, h6 {
   content: "• ";
   color: var(--color-accent);
 }
+
+@media (prefers-color-scheme: dark) {
+  .cv article {
+    color: black;
+  }
+
+  .cv-skills {
+    color: black; /* Optional: customize your link color too */
+  }
+}
+
+
