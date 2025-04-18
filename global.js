@@ -22,7 +22,7 @@ let pages = [
     {url: 'https://github.com/rhekacitra', title: 'Github'}
 ]
 
-const BASE_PATH = location.hostname === "localhost" ? "/" : "/portofolio/";
+const BASE_PATH = location.hostname === "localhost" ? "/" : "/website/";
 
 // ? "/" // local server
 // : "/website/"; // Github Pages repo name
