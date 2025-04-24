@@ -258,4 +258,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* GITHUB STATS */
+#profile-stats dl {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 1.5rem;
+  text-align: center;
+  font-family: 'Gaegu', cursive;
+  margin: 2rem 0;
+}
 
+#profile-stats dt {
+  grid-row: 1;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6c7280; /* soft gray */
+  letter-spacing: 1px;
+}
+
+#profile-stats dd {
+  grid-row: 2;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+  color: #111;
+}
