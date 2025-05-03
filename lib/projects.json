@@ -1,62 +1,74 @@
 [
     {
-        "title": "MBTI Guessr (Apr. 2025)",
+        "title": "MBTI Guessr",
         "image": "/portofolio/images/mbti-guessr-img.png",
-        "description": "Developed a full-stack web application that predicts MBTI personality types based on user input using machine learning, built four separate Naive Bayes classifiers for each MBTI dichotomy, deployed the model and Flask API on Render, implemented dynamic prediction results with top 3 MBTI guesses and animated GIFs."
+        "description": "Developed a full-stack web application that predicts MBTI personality types based on user input using machine learning, built four separate Naive Bayes classifiers for each MBTI dichotomy, deployed the model and Flask API on Render, implemented dynamic prediction results with top 3 MBTI guesses and animated GIFs.",
+        "year": "2025"
     },
     {
-        "title": "Damage Prediction by Wildfires (March 2025)",
+        "title": "Damage Prediction by Wildfires",
         "image": "/portofolio/images/damage-prediction-img.png",
-        "description": "Developed ML model to predict wildfire damage using CAL FIRE data, Applied data cleaning, EDA, feature engineering, and model optimization\n              Evaluated Logistic Regression, Random Forest, XGBoost, LightGBM, Deployed an interactive demo for real-time risk assessment: \n              Demo | Paper\n            "
+        "description": "Developed ML model to predict wildfire damage using CAL FIRE data, Applied data cleaning, EDA, feature engineering, and model optimization\n              Evaluated Logistic Regression, Random Forest, XGBoost, LightGBM, Deployed an interactive demo for real-time risk assessment.",
+        "year": "2025"
     },
     {
-        "title": "Healthy Recipes Analysis Website (Nov. 2024 - Dec. 2024)",
+        "title": "Healthy Recipes Analysis Website",
         "image": "/portofolio/images/ishealthy.png",
-        "description": "Analyzed food.com recipes using hypothesis testing and EDA, Built Random Forest model with 95% test accuracy, Created Plotly visualizations embedded on GitHub Pages:\n              Website\n            "
+        "description": "Analyzed food.com recipes using hypothesis testing and EDA, Built Random Forest model with 95% test accuracy, Created Plotly visualizations embedded on GitHub Pages.",
+        "year": "2024"
     },
     {
         "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-"
+        "description": "-In Progress-",
+        "year": "Unavailable"
     },
     {
         "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-"
+        "description": "-In Progress-",
+        "year": "Unavailable"
     },
     {
         "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-"
+        "description": "-In Progress-",
+        "year": "Unavailable"
     },
     {
         "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-"
+        "description": "-In Progress-",
+        "year": "Unavailable"
     },
     {
         "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-"
+        "description": "-In Progress-",
+        "year": "Unavailable"
     },
     {
         "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-"
+        "description": "-In Progress-",
+        "year": "Unavailable"
     },
     {
-        "title": "MBTI Guessr",
+        "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-"
+        "description": "-In Progress-",
+        "year": "Unavailable"
     },
     {
-        "title": "MBTI Guessr",
+        "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-"
+        "description": "-In Progress-",
+        "year": "Unavailable"
     },
     {
-        "title": "MBTI Guessr",
+        "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-"
+        "description": "-In Progress-",
+        "year": "Unavailable"
     }
 ]

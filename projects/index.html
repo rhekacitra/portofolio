@@ -18,7 +18,30 @@
 <body>
     
         <header><h1>Projects</h1></header>
+
+        <div class="container">
+          <svg id="projects-pie-plot" viewBox="-50 -50 100 100">
+          </svg>
+
+          <ul class="legend">
+            <!-- <li style="--color: { colors(index) }">
+              <span class="swatch"></span>
+              {data[i].label} <em>({data[i].value})</em>
+            </li>
+            <li>...</li>
+            ... -->
+          </ul>
+        </div>
+
+        <input
+          class="searchBar"
+          type="search"
+          aria-label="Search projects"
+          placeholder="🔍 Search projects…"
+        />
+
         <div class="projects">
+
           <!-- <article>
             <h2>Damage Prediction by Wildfires (March 2025)</h2>
             <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
