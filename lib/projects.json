@@ -1,74 +1,86 @@
 [
     {
+        "title": "Bike Watching Visualization",
+        "image": "/portofolio/images/bikewatching.png",
+        "description": "Developed an interactive web-based map visualization using D3.js and Mapbox GL to explore Boston’s bike-share activity across time. Implemented time-based filtering with a custom slider, dynamic circle scaling based on station traffic, and color encoding to highlight departure vs. arrival dominance. Enhanced usability with responsive design, real-time updates, and an accessibility-friendly legend to interpret traffic flow patterns.",
+        "link": "https://rhekacitra.github.io/bikewatching/",
+        "year": "2025"
+    },
+    {
         "title": "MBTI Guessr",
         "image": "/portofolio/images/mbti-guessr-img.png",
         "description": "Developed a full-stack web application that predicts MBTI personality types based on user input using machine learning, built four separate Naive Bayes classifiers for each MBTI dichotomy, deployed the model and Flask API on Render, implemented dynamic prediction results with top 3 MBTI guesses and animated GIFs.",
+        "link": "https://mbti-guessr.onrender.com",
         "year": "2025"
     },
     {
         "title": "Damage Prediction by Wildfires",
         "image": "/portofolio/images/damage-prediction-img.png",
         "description": "Developed ML model to predict wildfire damage using CAL FIRE data, Applied data cleaning, EDA, feature engineering, and model optimization\n              Evaluated Logistic Regression, Random Forest, XGBoost, LightGBM, Deployed an interactive demo for real-time risk assessment.",
+        "link": "https://drive.google.com/file/d/1VQapH-g8HYd2oP9Iw55TCLLvXcc92VSs/view",
         "year": "2025"
     },
     {
         "title": "Healthy Recipes Analysis Website",
         "image": "/portofolio/images/ishealthy.png",
         "description": "Analyzed food.com recipes using hypothesis testing and EDA, Built Random Forest model with 95% test accuracy, Created Plotly visualizations embedded on GitHub Pages.",
+        "link": "https://katrinasuherman.github.io/HealthyRecipeAnalysis/",
         "year": "2024"
     },
     {
         "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "-In Progress-",
+        "link": "https://vis-society.github.io/labs/2/images/empty.svg",
         "year": "Unavailable"
     },
     {
         "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "-In Progress-",
+        "link": "https://vis-society.github.io/labs/2/images/empty.svg",
         "year": "Unavailable"
     },
     {
         "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "-In Progress-",
+        "link": "https://vis-society.github.io/labs/2/images/empty.svg",
         "year": "Unavailable"
     },
     {
         "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "-In Progress-",
+        "link": "https://vis-society.github.io/labs/2/images/empty.svg",
         "year": "Unavailable"
     },
     {
         "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "-In Progress-",
+        "link": "https://vis-society.github.io/labs/2/images/empty.svg",
         "year": "Unavailable"
     },
     {
         "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "-In Progress-",
+        "link": "https://vis-society.github.io/labs/2/images/empty.svg",
         "year": "Unavailable"
     },
     {
         "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "-In Progress-",
+        "link": "https://vis-society.github.io/labs/2/images/empty.svg",
         "year": "Unavailable"
     },
     {
         "title": "In Progress",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "-In Progress-",
-        "year": "Unavailable"
-    },
-    {
-        "title": "In Progress",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-",
+        "link": "https://vis-society.github.io/labs/2/images/empty.svg",
         "year": "Unavailable"
     }
 ]

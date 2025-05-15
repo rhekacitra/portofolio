@@ -408,7 +408,6 @@ dl.info {
   position: fixed;
   top: 1em;
   left: 1em;
-  /* z-index: 1000; */
   backdrop-filter: blur(4px);
   transition-duration: 500ms;
   transition-property: opacity, visibility;
