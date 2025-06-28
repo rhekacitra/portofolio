@@ -11,7 +11,6 @@ let selectedIndex = -1;
 renderProjects(projects, projectsContainer, 'h2');
 renderPieChart(projects);
 
-// 🔎 Helper: filter by search query
 function filterByQuery(projects) {
   return projects.filter((project) => {
     const values = Object.values(project).join('\n').toLowerCase();

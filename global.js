@@ -1,37 +1,23 @@
-console.log('IT’S ALIVE!');
 
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
-// let navLinks = $$("nav a");
-
-// let currentLink = navLinks.find(
-//     (a) => a.host === location.host && a.pathname === location.pathname,
-// );
-
-// currentLink.classList.add('current');
-
-// currentLink?.classList.add('current');
-
 let pages = [
     {url: '', title: 'Home'},
     {url: 'projects/', title: 'Projects'},
-    {url: 'cv/', title: 'CV'},
+    {url: 'https://drive.google.com/file/d/1o5WHDkuhn4AuDdIMqdwIeh0PG3It0WXD/view?usp=sharing', title: 'CV'},
     {url: 'contact/', title: 'Contact'},
-    {url: 'meta/', title: 'Meta'},
     {url: 'https://github.com/rhekacitra', title: 'Github'}
 ]
 
 let nav = document.createElement('nav');
 document.body.prepend(nav);
 
-// Detect local vs GitHub Pages and adjust base path
 const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-  ? "/" // local dev
-  : "/portofolio/"; // your actual GitHub Pages repo
+  ? "/"
+  : "/portofolio/";
 
-// Step 3.1 continued: Create links and add to nav
 for (let p of pages) {
     let url = p.url;
     if (!url.startsWith('http')) {
@@ -42,66 +28,17 @@ for (let p of pages) {
     a.href = url;
     a.textContent = p.title;
   
-    // Step 2.3: Highlight current page
     a.classList.toggle(
       'current',
       a.host === location.host && a.pathname === location.pathname
     );
   
-    // Open external links in new tab
     if (a.host !== location.host) {
       a.target = '_blank';
     }
   
     nav.append(a);
   }
-
-// for (let p of pages) {
-//     let url = p.url;
-//     let title = p.title;
-//     // nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
-
-//     if (!url.startsWith('http')) {
-//         url = BASE_PATH + url;
-//     }
-
-//     let a = document.createElement('a');
-//     a.href = url;
-//     a.textContent = title;
-
-//     a.classList.toggle('current', a.host === location.host && a.pathname === location.pathname);
-
-//     if (a.host !== location.host) {
-//         a.target = '_blank';
-//     }
-
-//     nav.append(a);
-
-// }
-
-// for (let p of pages) {
-//     let url = p.url;
-//     if (!url.startsWith("http")) {
-//       url = BASE_PATH + url;
-//     }
-  
-//     let a = document.createElement("a");
-//     a.href = url;
-//     a.textContent = p.title;
-  
-//     // Highlight current page
-//     a.classList.toggle(
-//       "current",
-//       a.host === location.host && a.pathname === location.pathname
-//     );
-  
-//     // Open external links in new tab
-//     if (a.host !== location.host) {
-//       a.target = "_blank";
-//     }
-  
-//     nav.append(a);
-//   }
   
 document.body.insertAdjacentHTML(
     'afterbegin',
@@ -155,7 +92,6 @@ form?.addEventListener('submit', function (event) {
 
 export async function fetchJSON(url) {
   try {
-    // Fetch the JSON file from the given URL
     const response = await fetch(url);
     console.log(response)
 
@@ -172,7 +108,7 @@ export async function fetchJSON(url) {
 }
 
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
-  containerElement.innerHTML = ''; // Clear any existing content
+  containerElement.innerHTML = '';
 
   if (!Array.isArray(projects)) {
     console.error('renderProjects: project data must be an array');
@@ -198,6 +134,7 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
       <img src="${project.image}" alt="${project.title}">
       <div>
         <p>${project.description}</p>
+        <a href="${project.link}">Click here to see the project!</a>
         <p><b>${project.year}</b></p>
       </div>
     `;
@@ -210,3 +147,23 @@ export async function fetchGitHubData(username = 'rhekacitra') {
 
 
 }
+
+async function fetchGithubStats(username) {
+  try {
+      const response = await fetch(`https://api.github.com/users/${username}`);
+      if (!response.ok) throw new Error('Failed to fetch GitHub data');
+
+      const data = await response.json();
+
+      document.getElementById('public-repos').textContent = data.public_repos;
+      document.getElementById('public-gists').textContent = data.public_gists;
+      document.getElementById('followers').textContent = data.followers;
+      document.getElementById('following').textContent = data.following;
+
+  } catch (error) {
+      console.error('Error fetching GitHub stats:', error);
+  }
+}
+
+// Call this function with your GitHub username
+fetchGithubStats('rhekacitra');

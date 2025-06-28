@@ -1,5 +1,12 @@
 [
     {
+        "title": "InsideOR - Interactive Website",
+        "image": "/portofolio/images/insideOR.png",
+        "description": "Created a scrollytelling website that goes through the experience of how a surgery operates that consisted of interactive visualizations that are obtained from a 6000+ dataset from ViralDB",
+        "link": "https://katrinasuherman.github.io/InsideOR/",
+        "year": "2025"
+    },
+    {
         "title": "Bike Watching Visualization",
         "image": "/portofolio/images/bikewatching.png",
         "description": "Developed an interactive web-based map visualization using D3.js and Mapbox GL to explore Boston’s bike-share activity across time. Implemented time-based filtering with a custom slider, dynamic circle scaling based on station traffic, and color encoding to highlight departure vs. arrival dominance. Enhanced usability with responsive design, real-time updates, and an accessibility-friendly legend to interpret traffic flow patterns.",
@@ -26,61 +33,5 @@
         "description": "Analyzed food.com recipes using hypothesis testing and EDA, Built Random Forest model with 95% test accuracy, Created Plotly visualizations embedded on GitHub Pages.",
         "link": "https://katrinasuherman.github.io/HealthyRecipeAnalysis/",
         "year": "2024"
-    },
-    {
-        "title": "In Progress",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-",
-        "link": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year": "Unavailable"
-    },
-    {
-        "title": "In Progress",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-",
-        "link": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year": "Unavailable"
-    },
-    {
-        "title": "In Progress",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-",
-        "link": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year": "Unavailable"
-    },
-    {
-        "title": "In Progress",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-",
-        "link": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year": "Unavailable"
-    },
-    {
-        "title": "In Progress",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-",
-        "link": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year": "Unavailable"
-    },
-    {
-        "title": "In Progress",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-",
-        "link": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year": "Unavailable"
-    },
-    {
-        "title": "In Progress",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-",
-        "link": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year": "Unavailable"
-    },
-    {
-        "title": "In Progress",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "-In Progress-",
-        "link": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "year": "Unavailable"
     }
 ]
